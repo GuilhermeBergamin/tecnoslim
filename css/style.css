@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root{
+    --navbar-letras: #215db8;
+    --navbar-letras-hover: #0d68f0;
+    --navbar-fundo: #29b668;
+
+}
+
+.navbar-brand {
+    font-family:'Orbitron', sans-serif ;
+    color: var(--navbar-letras);
+    font-style: italic;
+    font-size: 20pt;
+}
+.navbar-brand:hover {
+    color: var(--navbar-letras-hover);
+}
+.offcanvas-title {
+    font-family:'Orbitron', sans-serif ;
+    color: var(--navbar-letras);
+}
+
+.bg-body-color {
+    background-color: #139971;
+}
