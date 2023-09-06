@@ -24,3 +24,12 @@
 .bg-body-color {
     background-color: #139971;
 }
+
+main {
+    margin-top: 100px;
+}
+.card-img-top {
+    width: 280px;
+    height: 230px;
+    border-radius: 25px;
+}
