@@ -1,35 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Sofia+Sans:ital,wght@1,1&display=swap');
 
 :root{
     --navbar-letras: #215db8;
     --navbar-letras-hover: #0d68f0;
     --navbar-fundo: #29b668;
+    --letras-chamada: #da6019;
+    --btn-hover:#438661;;
 
 }
-
+/* início navbar */
 .navbar-brand {
     font-family:'Orbitron', sans-serif ;
     color: var(--navbar-letras);
     font-style: italic;
-    font-size: 20pt;
+    font-size: 25pt;
 }
+
 .navbar-brand:hover {
     color: var(--navbar-letras-hover);
 }
+
 .offcanvas-title {
     font-family:'Orbitron', sans-serif ;
     color: var(--navbar-letras);
 }
 
-.bg-body-color {
-    background-color: #139971;
+.subtitulo {
+    margin-left: -1880px;
+    margin-top: 80px;
+}
+.subtitulo {
+    font-family:'Orbitron', sans-serif ;
+    font-size: 10pt;
+    font-style: italic;
+    color: var(--navbar-letras);
+
 }
 
-main {
-    margin-top: 100px;
+/* Fim navbar */
+
+/* Início do conteúdo */
+.title-1 {
+    margin-top: 135px;
 }
+
+.title-1 {
+    font-family:"Racing Sans One", cursive;
+    color: var(--navbar-letras);
+}
+
+.title-1 {
+    border: solid var(--navbar-fundo) 3px;
+    width: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 20pt;
+    color: var(--letras-chamada);
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: italic;
+}
+
+.bg-body-color {
+    background-color: var(--navbar-fundo);
+}
+
+.carousel-indicators{
+    height: 500px;
+}
+
 .card-img-top {
-    width: 280px;
-    height: 230px;
-    border-radius: 25px;
+    width: auto;
+    height: 300px;
+    border-radius: 0 0 15px 15px ;
+}
+
+.card-text {
+    font-family:'Mohave', sans-serif ;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.btn-primary {
+    background-color: var(--navbar-fundo);
+    border: none;
+    
+}
+.btn-primary:hover {
+    background-color: var(--btn-hover);
+}
+
+/* estilos page-one */
+/* conteúdo principal */
+.title-2 {
+    margin-top: 150px;
+}
+
+.title-2 {
+    font-family:"Racing Sans One", cursive;
+    font-size: 35pt;
+    color: var(--navbar-letras);
+}
+
+.title-2 {
+    text-align: center;
+    border-radius: 15px;
+}
+
+.sbt-2 {
+    font-size: 15pt;
+    font-style: italic;
+    font-family:'Sofia Sans', sans-serif ;
+}
+
+.lh-1 {
+    font-size: 15pt;
+}
+
+.image-corp {
 }

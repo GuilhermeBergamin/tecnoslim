@@ -2,147 +2,200 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecno Berga</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno Berga</title>
 
-  <!-- nome do autor -->
-  <meta name="author" content="Guilherme Bergamin da Luz" />
+    <!-- nome do autor -->
+    <meta name="author" content="Guilherme Bergamin da Luz" />
 
-  <!-- indexação dos mecanismos de busca -->
-  <meta name="robots" content="index, follow" />
-  <meta name="keywords"
-    content="senai, alex, machado, ribeiro, front-end, front, end, programação, programacao, programaçao, programacão, curso, sig, bootstrap, resposnivo, nav, navbar, menu, carrosel, carousel" />
-  <meta name="description" content="Esta página é um teste feito com Boostrap." />
+    <!-- indexação dos mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords"
+        content="senai, alex, machado, ribeiro, front-end, front, end, programação, programacao, programaçao, programacão, curso, sig, bootstrap, resposnivo, nav, navbar, menu, carrosel, carousel" />
+    <meta name="description" content="Esta página é um teste feito com Boostrap." />
 
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-  <!-- Meu CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- favicon -->
-  <link href="imagens/robot.png" rel="shortcut icon" type="image/png" />
+    <!-- Meu CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- favicon -->
+    <link href="imagens/icon/favicon-32x32.png" rel="shortcut icon" type="image/png" />
 
 </head>
 
 <body data-bs-theme="dark">
-  <!-- navbar -->
-  <nav class="navbar bg-body-color fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tecno Berga</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- navbar -->
+    <nav class="navbar bg-body-color fixed-top">
+        <div class="container-fluid">
+            <h1><a class="navbar-brand" href="index.html">Tecno Berga</a></h1>
+                <h6 class="subtitulo">O seu portal de noticias!</h6>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Pagina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquise aqui..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    </nav>
+    <!-- fim do navbar -->
+
+    <!-- conteúdo principal da página -->
+    <main class="mt-5">
+        <div class="container">
+            <h2 type="title" class="title-1"> Portal de Notícias</h2>
+            <section>
+                <article>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- LuzIA -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/luzIA.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">'ChatGPT no WhatsApp' converte mensagem de áudio em texto e
+                                        cria imagens; veja como
+                                        usar'.</h5>
+                                    <p class="card-text">Assistente LuzIA pode ser usada para pedir dicas em assuntos
+                                        como culinária e filmes,
+                                        além de escrever e revisar textos. Desde seu lançamento, ela foi usada em mais
+                                        de 2 milhões de números
+                                        de celular no Brasil.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="page-one.html" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Relógio revolucionário -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/relogio-rev.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Relógio revolucionário mantem você sob controle e monitora sua saúde, afirmam especialistas.</h5>
+                                    <p class="card-text">Existe um novo relógio monitor de glicose que faz testes rápidos e indolores de açúcar no sangue em questão de segundos, você sabia?</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="#" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gatonet -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/Gatonet.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Anatel inaugura laboratório especializado no combate aos
+                                        aparelhos de 'gatonet'."</h5>
+                                    <p class="card-text">A Agência Nacional de Telecomunicações (Anatel) inaugurou,
+                                        nesta sexta-feira (1º), um
+                                        laboratório especializado na análise de aparelhos de "TV Boxes" - usados para
+                                        captar o sinal de TV por
+                                        assinatura de forma clandestina. Esses equipamentos são popularmente chamados de
+                                        "gatonet".</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="#" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- imortalidade -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/imortal.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Como inteligência artificial pode ajudar na busca pela imortalidade</h5>
+                                    <p class="card-text">Assistente LuzIA pode ser usada para pedir dicas em assuntos
+                                        como culinária e filmes,
+                                        além de escrever e revisar textos. Desde seu lançamento, ela foi usada em mais
+                                        de 2 milhões de números
+                                        de celular no Brasil.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="#" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Android lento, saiba como resolver -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/android-lento.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Android lento nunca mais! 8 dicas infalíveis para deixar o celular mais rápido</h5>
+                                    <p class="card-text">Dispositivos Android podem ficar lentos caso usuários não realizem melhorias de desempenho e limpezas internas no aparelho; saiba como resolver a lentidão rapidamente.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="#" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- celulares Xiaomi -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imagens/melhores-celulares-xiaomi.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Melhor celular Xiaomi em 2023: conheça 6 modelos poderosos</h5>
+                                    <p class="card-text">Smartphones da gigante chinesa agregam performance de ponta e preço mais acessível; lista reúne seis celulares potentes da Xiaomi para comprar em 2023.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary"><a href="#" class="btn btn-primary"> Saiba mais...</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- fim do navbar -->
-
-
-  <!-- Inicío do carrocel -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imagens/artificialIntelligence.jpg" class="d-block w-1000" alt="Image artificial Intelligence">
-      </div>
-      <div class="carousel-item">
-        <img src="imagens/earth.jpg" class="d-block w-100" alt="Earth tecnology">
-      </div>
-      <div class="carousel-item">
-        <img src="imagens/program.png" class="d-block w-100" alt="Program">
-      </div>
-      <div class="carousel-item">
-        <img src="imagens/virtualGlass.jpg" class="d-block w-100" alt="Virtual Glass">
-      </div>
-    </div>
-  </div>
-  <!-- fim do carrocel -->
-
-
-  <!-- Conteúdo pricipal da página -->
-  <main>
-    <div class="card-group">
-      <div class="card">
-        <img src="imagens/luzIA.webp" class="card-img-top" alt="LuzIA">
-        <div class="card-body">
-          <h5 class="card-title">'ChatGPT no WhatsApp' converte mensagem de áudio em texto e cria imagens; veja como
-            usar'.</h5>
-          <p class="card-text">Assistente LuzIA pode ser usada para pedir dicas em assuntos como culinária e filmes,
-            além de escrever e revisar textos. Desde seu lançamento, ela foi usada em mais de 2 milhões de números
-            de celular no Brasil.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Ir para a noticia</a>
+        </section>
         </div>
-      </div>
+    </main>
+    <hr/>
+    <!-- footer -->
+    <footer>
 
-      <div class="card">
-        <img src="imagens/Gatonet.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">"Anatel inaugura laboratório especializado no combate aos aparelhos de 'gatonet'."</h5>
-          <p class="card-text">A Agência Nacional de Telecomunicações (Anatel) inaugurou, nesta sexta-feira (1º), um
-            laboratório especializado na análise de aparelhos de "TV Boxes" – usados para captar o sinal de TV por
-            assinatura de forma clandestina. Esses equipamentos são popularmente chamados de "gatonet".</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Ir para a noticia</a>
-        </div>
-      </div>
+    </footer>
+    <!--fim do footer -->
 
-      <div class="card">
-        <img src="imagens/smartwatches.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> "6 smartwatches parecidos com o Apple Watch e que cabem no seu bolso" </h5>
-          <p class="card-text">Realme, Xiaomi e Huami têm relógios com corpo mais quadrado, seguindo a estética do
-            modelo da Apple; smartwatches são mais baratos e também monitoram a saúde e exercícios.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <a href="#" class="btn btn-primary">Ir para a noticia</a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- fim Conteúdo pricipal da página -->
+    <!-- fim do conteúdo principal da página -->
 
-
-
-  <!-- Js Bootstrap -->
+      <!-- Js Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
