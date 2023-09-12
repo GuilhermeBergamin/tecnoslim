@@ -1,11 +1,8 @@
+// Função para reiniciar a página
+const reiniciarPagina = () => {
+    window.location.reload();
+};
 
-document.addEventListener("btn-secondarytwo", () => {
-    // Obtém uma referência para o botão
-    const resetButton = document.getElementById("resetButton");
-
-    // Adiciona um ouvinte de evento de clique ao botão
-    resetButton.addEventListener("click", () => {
-        // Recarrega a página
-        location.reload();
-    });
-});
+// Adicione um evento de clique ao botão de cadastrar
+const btnCad = document.getElementById('btn-fech');
+btnCad.addEventListener('click', reiniciarPagina);

@@ -48,7 +48,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Pagina Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Fale Conosco</a>
+                            <a class="nav-link" href="fale-conosco.html">Fale Conosco</a>
                         </li>
                     </ul>
                     <form class="d-flex mt-3" role="search">
@@ -65,7 +65,7 @@
     <!-- formulário -->
     <main class="mt-5">
         <div class="container">
-            <h1>Formulário de cadastro</h1>
+            <h1>Melhore sua Experiência</h1>
             <hr />
             <form action="" method="">
                 <section class="row mt-5">
@@ -220,14 +220,28 @@
                                     Seus dados foram cadastrados com sucesso!
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondarytwo"
+                                    <button type="button" class="btn btn-secondarytwo" id="btn-fech"
                                         data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <!-- fim do modal -->
                     <!-- fim do endereço -->
+
+                    <!-- caixa de sugestões -->
+                        <div class=container>
+                            <main class="main-suggest">
+                                <h4>Caixa de Sugestões</h4>
+                                
+                                <p class="lh-1">Escreva na caixa de texto abaixo o que podemos fazer para melhorar o espaço do <b><i>Tecno Berga</i></b>. Deixe seu elogio, crítica ou sugestão abaixo e envie pra gente!</p>
+                                <form class="form-suggest">
+                                    <textarea minlength=20 maxlength=255 name="sugestao" placeholder="Digite aqui..."></textarea>
+                                    <button class="btn btn-primary mt-5" type="submit">Enviar sugestão</button>
+                                </form>
+                            </main>
+                        </div>
+                    <!-- fim caixa de sugestões -->
             </form>
         </div>
     </main>
