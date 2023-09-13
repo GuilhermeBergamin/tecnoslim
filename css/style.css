@@ -1,32 +1,43 @@
-/* fontes */
-/* navbar */
-/*conteudo principal - title-1 - portal de noticias */
-
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Raleway:wght@100&display=swap');
-/* card-titke-conteúdo principal - index */
+/* fonte título pricipal - navbar-brand */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Share+Tech+Mono&display=swap');
+/* title-1 */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Kanit:ital,wght@1,700&family=Share+Tech+Mono&display=swap');
+/* card-title */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab:wght@500&display=swap');
 /* conteúdo principal_card-text */
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
-/* page-one_conteúdo principal_sbt-2 */
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Sofia+Sans:ital,wght@1,1&display=swap');
 
-:root{
+/* sbt-3 */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Kanit:ital,wght@1,700&family=Oswald:wght@300&family=Share+Tech+Mono&display=swap');
+
+/* lh-1 = p */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
     --navbar-letras: #215db8;
     --navbar-letras-hover: #0d68f0;
     --navbar-fundo: #29b668;
     --letras-chamada: #da6019;
+    --links: #7598e4;
     --letras-chamada-2: #2d8f52;
-    --btn-hover:#438661;;
-    --sub-1:#417457;;
-    
-
+    --btn-hover: #438661;
+    --sub-1: #417457;
 }
+
 /* início navbar */
 .navbar-brand {
-    font-family:'', sans-serif ;
+    font-family: 'Share Tech Mono', sans-serif;
     color: var(--navbar-letras);
     font-style: italic;
     font-size: 25pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.navbar-brand {
+    border: solid 4px;
+    border-radius: 60px;
+    padding: 10px;
 }
 
 .navbar-brand:hover {
@@ -34,23 +45,21 @@
 }
 
 .offcanvas-title {
-    font-family:'', sans-serif ;
+    font-family: 'Share Tech Mono', sans-serif;
     color: var(--navbar-letras);
-}
-
-.subtitulo {
-    margin-left: -1880px;
-    margin-top: 50px;
-}
-.subtitulo {
-    font-family:'', sans-serif ;
-    font-size: 10pt;
+    font-weight: bold;
     font-style: italic;
-    color: var(--navbar-letras);
-
 }
 
-/* Fim navbar */
+.nav-item {
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 15pt;
+}
+
+.d-flex {
+    font-family: 'Share Tech Mono', sans-serif;
+}
+/* fim navbar */
 
 /* Início do conteúdo */
 .title-1 {
@@ -58,7 +67,7 @@
 }
 
 .title-1 {
-    font-family:"Racing Sans One", cursive;
+    font-family: 'Kanit', sans-serif;
     color: var(--navbar-letras);
 }
 
@@ -69,25 +78,25 @@
     border-radius: 15px;
 }
 
-.card-title {
-    font-size: 20pt;
-    color: var(--letras-chamada);
-    font-family: 'Roboto Slab', sans-serif;
-    font-style: italic;
-}
-
 .bg-body-color {
     background-color: var(--navbar-fundo);
 }
 
-.carousel-indicators{
+.carousel-indicators {
     height: 500px;
 }
 
 .card-img-top {
     width: auto;
     height: 300px;
-    border-radius: 0 0 15px 15px ;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-title {
+    font-size: 20pt;
+    color: var(--letras-chamada);
+    font-family: 'Roboto Slab', sans-serif ;
+    font-style: italic;
 }
 
 .card-text {
@@ -99,43 +108,38 @@
 .btn-primary {
     background-color: var(--navbar-fundo);
     border: none;
-    
+
 }
+
 .btn-primary:hover {
     background-color: var(--btn-hover);
 }
 
 /* estilos page-one */
 /* conteúdo principal */
-.title-2 {
-    margin-top: 150px;
-}
 
-.title-2 {
-    font-family:"Racing Sans One", cursive;
-    font-size: 35pt;
-    color: var(--navbar-letras);
-}
 
-.title-2 {
-    text-align: center;
-    border-radius: 15px;
-}
-
-.sbt-2 {
+.sbt-3 {
+    font-family:'Oswald', sans-serif ;
     font-size: 20pt;
-    font-style: italic;
-    font-family:'Sofia Sans', sans-serif ;
+    color: var(--letras-chamada-2);
     font-weight: bold;
-    color: var(--sub-1);
+    text-align: center
+}
+
+.cont {
+    text-align: center;
 }
 
 .lh-1 {
-    word-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 1px;
+    font-family:'Ubuntu', sans-serif ;
     font-size: 13pt;
     text-align: justify;
+    text-indent: 20px;
+    line-height: normal;
 }
+
 
 .imag-corp {
     width: 800px;
@@ -143,15 +147,14 @@
     margin-left: 175px;
 }
 
-.sbt-3 {
-    font-family: 'Sofia Sans';
-    color: var(--letras-chamada-2);
-    font-weight: bold;
+.imag-cell {
+    width: 500px;
 }
 
 .li-nk {
     text-decoration: none;
-    color: var(--letras-chamada);
+    color: var(--links);
+    font-weight: bolder;
 }
 
 /* Formulário */
@@ -159,28 +162,6 @@
     margin-top: 150px;
 }
 
-/* footer */
-.roda-pe {
-    background-color: var(--navbar-fundo);
-}
-
-.roda-pe {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-}
-
-.icon-image {
-    width: 25px;
-    height: 25px;
-}
-
-
-.text-body-secondary {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
 
 /* caixa de sugestões */
 textarea {
@@ -203,5 +184,48 @@ textarea {
     max-width: 430px;
     margin: 30px auto;
     height: 100%;
-}
+    }
 
+    /* footer */
+    .roda-pe {
+        background-color: var(--navbar-fundo);
+    }
+    
+    .roda-pe {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .icon-image {
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    .text-body-secondary-2 {
+        font-family: 'Share Tech Mono', sans-serif;
+        color: var(--navbar-letras);
+        font-style: italic;    
+        font-size: 10pt;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .text-body-secondary-2 {
+        border: solid 3px;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    
+    .text-body-secondary-2 {
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+
+    .text-body-secondary-2:hover {
+        color: var(--navbar-letras-hover);
+    }
+
+/* fim do footer */
